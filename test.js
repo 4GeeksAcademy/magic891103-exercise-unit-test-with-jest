@@ -31,3 +31,11 @@ test("One Dollar to Yen", function(){
 
     expect(fromDollarToYen(1.2 )).toBe(127.9);
 })
+test("One Yen to Pound", function(){
+    const {fromYenToPound} = require('./app.js')
+
+    const expected =  127.9 * 0.8
+
+
+    expect(fromYenToPound(127.9)).toBe(0.8);
+})
